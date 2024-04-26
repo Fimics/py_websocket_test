@@ -3,7 +3,7 @@ import websockets
 
 
 async def send_message():
-    uri = "ws://localhost:8765"  # WebSocket 服务器的地址
+    uri = "ws://192.168.2.173:8765"  # WebSocket 服务器的地址
 
     while True:
         try:

@@ -20,7 +20,7 @@ async def echo(websocket, path):
         print(f"Connection closed unexpectedly: {e}")
 
 async def start_server():
-    server = await websockets.serve(echo, "localhost", 8765)
+    server = await websockets.serve(echo, "192.168.2.173", 8765)
     await server.wait_closed()
 
 asyncio.run(start_server())
